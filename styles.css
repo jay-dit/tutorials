@@ -1,0 +1,62 @@
+body {
+    background-color: #364052;
+    line-height: 1.5;
+   }
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    margin-left: 1em;
+    margin-right: 1em;
+    /* Отступ слева в браузере IE и Opera */
+    padding-left: 1em;
+    padding-right: 1em;
+    /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+   
+.container{
+    display: grid;
+    grid-gap: 2%;
+    grid-template-columns: repeat(4, 1fr );
+    grid-auto-rows: 300px;
+    font-family: 'Consolas' ;
+    background-color: #364052;
+    
+}
+
+.block1{
+    grid-row: 1 /span 3;
+    grid-column: 1 /span 1;
+    margin: 2%;
+
+}
+
+.header-block1{
+    height: 2.5em;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #232f3f;
+    border: .15em solid;
+    border-color: #38d1d3;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    color: #38d1d3;
+}
+
+.text-block1{
+    height: 80%;
+    font-weight: 600;
+    display: flex;
+    color: #a5bfca;
+    background-color: #232f3f;
+    border: .3em solid;
+    border-color: #2d3a4a;
+    margin-bottom: 0.5em;
+    border-radius: 10px;
+}
+
+/* https://habr.com/ru/articles/656245/ */
